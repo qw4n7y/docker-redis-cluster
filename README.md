@@ -9,8 +9,6 @@ The main usage for this container is to test redis cluster code. For example in 
 
 The cluster is 6 redis instances running with 3 master & 3 slaves, one slave for each master. They run on ports 7000 to 7005.
 
-It also contains 2 standalone instances that is not part of the cluster. They are running on port 7006 & 7007
-
 This image requires at least `Docker` version 1.10 but the latest version is recommended.
 
 
@@ -67,7 +65,7 @@ To build your own image run:
 
 And to run the container use:
 
-    docker run -i -t -p 7000:7000 -p 7001:7001 -p 7002:7002 -p 7003:7003 -p 7004:7004 -p 7005:7005 -p 7006:7006 -p 7007:7007
+    docker run -i -t -p 7000:7000 -p 7001:7001 -p 7002:7002 -p 7003:7003 -p 7004:7004 -p 7005:7005
 
     # or
 
